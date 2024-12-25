@@ -16,12 +16,12 @@ const COLLECTIONS = {
 
 const propertyTypes = [
   "House",
-  "Townhomes",
-  "Condos",
-  "Duplexes",
-  "Studios",
+  "Townhome",
+  "Condo",
+  "Duplexe",
+  "Studio",
   "Villa",
-  "Apartments",
+  "Apartment",
   "Others",
 ];
 
@@ -31,7 +31,7 @@ const facilities = [
   "Sports Center",
   "Cutlery",
   "Gym",
-  "Swimming pool",
+  "Swimming Pool",
   "Wifi",
   "Pet Center",
 ];
@@ -71,6 +71,8 @@ function getRandomSubset<T>(
 }
 
 async function seed() {
+  console.log("Seeding data...");
+
   try {
     // Clear existing data from all collections
     for (const key in COLLECTIONS) {

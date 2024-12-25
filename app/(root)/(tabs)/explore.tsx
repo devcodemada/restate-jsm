@@ -18,6 +18,7 @@ import NoResults from "@/components/NoResults";
 
 import { getProperties } from "@/lib/appwrite";
 import { useAppwrite } from "@/lib/useAppwrite";
+import seed from "@/lib/seed";
 
 const Explore = () => {
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
